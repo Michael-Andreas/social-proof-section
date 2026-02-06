@@ -20,7 +20,6 @@ body {
 body {
   font-family: "League Spartan", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1;
-  color: #333;
   font-size: .9375rem;
   font-weight: 400;
 }
@@ -43,12 +42,21 @@ a {
   color: inherit;
 }
 
+header {
+  text-align: center;
+  padding-top: 80px;
+  margin-inline: 24px;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 0.85;
   letter-spacing: -0.125rem;
-  color: var(--purple-300);
+  color: var(--purple-900);
+  max-width: 29.125rem;
+  padding-bottom: 16px;
+  margin-inline: auto;
 }
 
 header p {
@@ -57,6 +65,13 @@ header p {
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: -0.6px;
+  padding-bottom: 32px;
+  max-width: 28.3125rem;
+  margin-inline: auto;
+}
+
+main {
+  margin-inline: 24px;
 }
 
 section {
@@ -64,6 +79,9 @@ section {
   flex-direction: column;
   gap: 16px;
   padding-top: 48px;
+  padding-bottom: 80px;
+  max-width: 28.3125rem;
+  margin-inline: auto;
 }
 
 article {
@@ -81,7 +99,8 @@ article img {
 .card-header {
   display: flex;
   align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .card-header h2 {
