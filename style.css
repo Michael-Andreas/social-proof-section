@@ -70,6 +70,50 @@ header p {
   margin-inline: auto;
 }
 
+.rating-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rating-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  max-width: 28.3125rem;
+  margin-inline: auto;
+  background-color: var(--purple-100);
+  border-radius: 8px;
+}
+
+.stars-visual {
+  width: 90px;
+  /* Breite für 5 Sterne inkl. Abstand */
+  height: 15px;
+  background-color: #f59e0b;
+  /* Die Sternfarbe */
+  /* Der Pfad zu deinem Stern-SVG */
+  --star-svg: url("./images/icon-star.svg");
+
+  -webkit-mask-image: var(--star-svg);
+  mask-image: var(--star-svg);
+
+  /* Das sorgt dafür, dass der Stern 5-mal wiederholt wird */
+  mask-repeat: space;
+  -webkit-mask-repeat: space;
+  display: flex;
+  gap: 10px;
+}
+
+.rating-text {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--purple-900);
+}
+
 main {
   margin-inline: 24px;
 }
