@@ -12,16 +12,12 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   font-family: "League Spartan", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1;
   font-size: .9375rem;
   font-weight: 400;
+  position: relative;
 }
 
 img {
@@ -40,6 +36,23 @@ select {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.bg-pattern {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-pattern-top-mobile {
+  left: 0;
+  top: 0;
+}
+
+.bg-pattern-bottom-mobile {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 header {
@@ -116,6 +129,7 @@ header p {
 
 main {
   margin-inline: 24px;
+  position: relative;
 }
 
 section {
