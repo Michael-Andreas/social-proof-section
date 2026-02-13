@@ -200,3 +200,11 @@ article>p {
     font-size: 3.5rem;
   }
 }
+
+@media (min-width: 75rem) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 69.375rem;
+  }
+}
