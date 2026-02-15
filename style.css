@@ -55,6 +55,14 @@ a {
   width: 100%;
 }
 
+.bg-pattern-top-desktop {
+  display: none;
+}
+
+.bg-pattern-bottom-desktop {
+  display: none;
+}
+
 header {
   text-align: center;
   padding-top: 80px;
@@ -103,22 +111,8 @@ header p {
 }
 
 .stars-visual {
-  width: 90px;
-  /* Breite für 5 Sterne inkl. Abstand */
-  height: 15px;
-  background-color: #f59e0b;
-  /* Die Sternfarbe */
-  /* Der Pfad zu deinem Stern-SVG */
-  --star-svg: url("./images/icon-star.svg");
-
-  -webkit-mask-image: var(--star-svg);
-  mask-image: var(--star-svg);
-
-  /* Das sorgt dafür, dass der Stern 5-mal wiederholt wird */
-  mask-repeat: space;
-  -webkit-mask-repeat: space;
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .rating-text {
@@ -180,7 +174,7 @@ article>p {
   line-height: 1.3;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 31.25rem) {
   .rating-container {
     flex-direction: row;
     padding: 16px 32px;
@@ -189,6 +183,16 @@ article>p {
 }
 
 @media (min-width: 768px) {
+
+  .bg-pattern-top-mobile {
+    display: none;
+  }
+
+  .bg-pattern-top-desktop {
+    display: block;
+    left: 0;
+    top: 0;
+  }
 
   .rating-container {
     flex-direction: row;
