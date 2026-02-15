@@ -221,5 +221,18 @@ article>p {
     display: flex;
     justify-content: space-between;
     max-width: 69.375rem;
+    margin-inline: auto;
+  }
+
+  .rating-container {
+    margin: 0;
+  }
+
+  .rating-container:nth-child(1) {
+    transform: translateX(-96px);
+  }
+
+  .rating-container:nth-child(2) {
+    transform: translateX(-48px);
   }
 }
