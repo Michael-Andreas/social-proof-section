@@ -175,6 +175,17 @@ article>p {
 }
 
 @media (min-width: 31.25rem) {
+  .bg-pattern-bottom-mobile {
+    display: none;
+  }
+
+  .bg-pattern-bottom-desktop {
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   .rating-container {
     flex-direction: row;
     padding: 16px 32px;
