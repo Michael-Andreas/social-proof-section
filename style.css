@@ -6,6 +6,10 @@
   --orange-400: hsl(28, 84%, 61%);
 }
 
+html {
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +22,7 @@ body {
   font-size: .9375rem;
   font-weight: 400;
   position: relative;
+  height: 100%;
 }
 
 img {
@@ -184,6 +189,7 @@ article>p {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
   }
 
   .rating-container {
@@ -234,5 +240,16 @@ article>p {
 
   .rating-container:nth-child(2) {
     transform: translateX(-48px);
+  }
+
+  section {
+    max-width: 69.375rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .last {
+    margin-top: 32px;
   }
 }
