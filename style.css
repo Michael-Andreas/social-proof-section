@@ -230,6 +230,21 @@ article>p {
     margin-inline: auto;
   }
 
+  header h1 {
+    text-align: left;
+    max-width: 25rem;
+    margin-inline: 0;
+  }
+
+  header p {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .rating-wrapper {
+    margin-block: auto;
+  }
+
   .rating-container {
     margin: 0;
   }
@@ -244,15 +259,17 @@ article>p {
 
   section {
     max-width: 69.375rem;
-    height: auto;
+    padding-top: 64px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
   }
 
-  article:nth-child(1) {}
+  article:nth-child(2) {
+    transform: translateY(16px);
+  }
 
-  article:nth-child(2) {}
-
-  article:nth-child(3) {}
+  article:nth-child(3) {
+    transform: translateY(32px);
+  }
 }
