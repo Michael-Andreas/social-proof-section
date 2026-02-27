@@ -247,9 +247,12 @@ article>p {
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
   }
 
-  .last {
-    margin-top: 32px;
-  }
+  article:nth-child(1) {}
+
+  article:nth-child(2) {}
+
+  article:nth-child(3) {}
 }
