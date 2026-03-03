@@ -24,6 +24,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/Screenshot%202026-03-03%20at%2021-43-02%20Frontend%20Mentor%20Social%20proof%20section.png)
+- alt="Frontend Mentor Social proof section challenge solution showing a responsive layout with three stacked card columns displaying customer testimonials and star ratings. The design demonstrates a grid layout with offset vertical positioning creating a cascading visual effect. Desktop view of the completed project."
 
 ### Links
 
